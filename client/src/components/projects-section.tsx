@@ -26,17 +26,17 @@ const projects = [
 
 export function ProjectsSection() {
   return (
-    <section id="projects" className="py-16 bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-slate-800">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold gradient-text mb-4">Projects</h2>
+    <section id="projects" className="py-12 sm:py-16 bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-slate-800">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl font-bold gradient-text mb-4">Projects</h2>
           <div className="flex items-center justify-center space-x-2">
-            <p className="text-xl text-gray-600 dark:text-gray-400">Explore MERN Projects in My CV</p>
-            <Download className="text-primary" size={20} />
+            <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-400">Explore MERN Projects in My CV</p>
+            <Download className="text-primary" size={18} />
           </div>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {projects.map((project, index) => (
             <Card key={index} className="bg-white dark:bg-slate-900 rounded-2xl overflow-hidden shadow-xl border border-gray-100 dark:border-gray-700 card-hover">
               <div className="relative overflow-hidden group">
@@ -57,10 +57,10 @@ export function ProjectsSection() {
                   </div>
                 </div>
               </div>
-              <CardContent className="p-6">
-                <h3 className="text-xl font-bold mb-2 text-gray-800 dark:text-gray-100">{project.title}</h3>
-                <p className="text-primary font-medium mb-3">{project.techStack}</p>
-                <p className="text-gray-600 dark:text-gray-400 text-sm">{project.description}</p>
+              <CardContent className="p-4 sm:p-6">
+                <h3 className="text-lg sm:text-xl font-bold mb-2 text-gray-800 dark:text-gray-100">{project.title}</h3>
+                <p className="text-primary font-medium mb-2 sm:mb-3 text-sm sm:text-base">{project.techStack}</p>
+                <p className="text-gray-600 dark:text-gray-400 text-xs sm:text-sm">{project.description}</p>
               </CardContent>
             </Card>
           ))}

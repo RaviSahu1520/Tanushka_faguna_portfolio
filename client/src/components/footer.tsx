@@ -28,9 +28,9 @@ export function Footer() {
   };
 
   return (
-    <footer id="contact" className="gradient-bg text-white py-16">
-      <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
+    <footer id="contact" className="gradient-bg text-white py-12 sm:py-16">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12">
           {/* Brand Section */}
           <div>
             <div className="flex items-center space-x-2 mb-4">
