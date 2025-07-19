@@ -24,8 +24,8 @@ export function HeroSection() {
   return (
     <section id="home" className="pt-24 pb-12 sm:pt-28 sm:pb-16 min-h-screen flex items-center relative">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Hello message bubble - positioned above everything */}
-        <div className="absolute top-4 left-8 sm:left-12 lg:left-20 bg-white dark:bg-slate-800 px-4 py-2 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700 animate-bounce z-50">
+        {/* Hello message bubble - positioned on center-left */}
+        <div className="absolute top-4 left-1/2 transform -translate-x-1/2 lg:left-1/4 lg:transform-none bg-white dark:bg-slate-800 px-4 py-2 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700 animate-bounce z-50">
           <p className="text-sm font-medium text-gray-700 dark:text-gray-300">Hello! 👋</p>
         </div>
         
