@@ -22,17 +22,17 @@ export function HeroSection() {
   };
 
   return (
-    <section id="home" className="pt-20 pb-12 sm:pt-24 sm:pb-16 min-h-screen flex items-center">
+    <section id="home" className="pt-16 pb-12 sm:pt-20 sm:pb-16 min-h-screen flex items-center overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
           {/* Left Side - Character */}
           <div className="order-1 lg:order-1 relative flex justify-center">
-            {/* Hello message bubble - positioned at top left */}
-            <div className="absolute -top-8 left-0 bg-white dark:bg-slate-800 px-4 py-2 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700 animate-bounce z-10">
+            {/* Hello message bubble - positioned extending above header */}
+            <div className="absolute -top-16 sm:-top-20 left-4 sm:left-8 bg-white dark:bg-slate-800 px-4 py-2 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700 animate-bounce z-50">
               <p className="text-sm font-medium text-gray-700 dark:text-gray-300">Hello! 👋</p>
             </div>
             
-            <div className="relative">
+            <div className="relative -mt-8 sm:-mt-12">
               <div className="absolute inset-0 gradient-bg rounded-full blur-3xl opacity-20 animate-pulse"></div>
               <img 
                 src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=600" 
