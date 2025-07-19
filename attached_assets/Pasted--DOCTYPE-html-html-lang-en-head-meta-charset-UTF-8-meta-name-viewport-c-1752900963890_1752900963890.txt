@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="manifest" href="manifest.json">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="icon" type="image/png" href="assets/img/blue-Logo.png">
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Chandar Dev Pathak</title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="./index.html" class="nav__logo"><img src="./assets/img/bule logo ani.gif" alt=""></a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">About Me</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="projects.html" class="nav__link">Projects</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="contact.html" class="button">Contact Me</a>
+                    </li>
+                </ul>
+
+                <!-- close button  -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+            <div class="nav__actions">
+                <!-- Theme button  -->
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                <!-- Toggle button  -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-apps-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section">
+            <div class="home__rectangle"></div>
+            <div class="home__container container gird">
+                <div class="home__perfil perfil">
+                    <div class="perfil__content">
+                        <img src="assets/img/home_prefil.png" alt="image" class="perfil__img">
+                        <div class="message">Hello..</div>
+                    </div>
+                </div>
+
+                <div class="home__content gird">
+                    <div class="home__data gird">
+                        <h1 class="home__name" id="nameElement">Chandra Dev Pathak</h1>
+                        <h2 class="home__profession" id="professionElement">Full Stack / MERN Developer</h2>
+                        <div class="home__social">
+                            <a href="https://www.linkedin.com/in/chandra-dev-pathak-2684b7292/" target="_blank"
+                                class="home__social-link">
+                                <i class="ri-linkedin-box-fill"></i>
+                            </a>
+                            <a href="https://github.com/chandra-dev-Pathak" target="_blank" class="home__social-link">
+                                <i class="ri-github-fill"></i>
+                            </a>
+                            <a href="https://vercel.com/chandra-dev-pathak" target="_blank" class="home__social-link">
+                                <i class="ri-triangle-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="assets/pdf/Chandra Dev Pathak.pdf" download="" class="home__button button">Download
+                        CV</a>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== SERVICES ====================-->
+        <section class="services section">
+            <h2 class="section__title">Services</h2>
+            <div class="services__container container grid">
+                <article class="services__card">
+                    <i class="ri-code-s-slash-line services__icon"></i>
+                    <h2 class="services__title">Web Developer</h2>
+                    <p class="services_discription">
+                        Vision to Virtual Reality: Expert Web Development Services Tailored for Seamless
+                        Functionality and Engaging User
+                        Experiences.
+                    </p>
+                    <button class="services__button button">Know More</button>
+                    <div class="services__modal">
+                        <div class="service__modal-content">
+                            <i class="ri-close-line service__modal-close"></i>
+                            <h2 class="service__modal-title">Web Developer</h2>
+                            <ul class="services__modal-list grid">
+                                <li class="service__modal-item">
+                                    Crafting websites optimized for diverse devices with seamless navigation and dynamic
+                                    elements.
+                                </li>
+                                <li class="service__modal-item">
+                                    Tailoring user interfaces to embody your brand identity, ensuring a captivating
+                                    online presence.
+                                </li>
+                                <li class="service__modal-item">
+                                    Developing intuitive platforms with fluid payment integrations and user-centric
+                                    design.
+                                </li>
+                                <li class="service__modal-item">
+                                    Building responsive websites that excel across screens, offering engaging user
+                                    experiences.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="services__card">
+                    <i class="ri-pen-nib-fill services__icon"></i>
+                    <h2 class="services__title">Web Designer</h2>
+                    <p class="services_discription">
+                        Translating Ideas into Artistry: Premier Web Design Solutions Focused on Elegance,
+                        Functionality, and Brand Resonance.
+                    </p>
+                    <button class="services__button button">Know More</button>
+                    <div class="services__modal">
+                        <div class="service__modal-content">
+                            <i class="ri-close-line service__modal-close"></i>
+                            <h2 class="service__modal-title">Web Designer</h2>
+                            <ul class="services__modal-list grid">
+                                <li class="service__modal-item">
+                                    Creating adaptable websites across devices, reflecting brand essence through bespoke
+                                    interfaces.
+                                </li>
+                                <li class="service__modal-item">
+                                    Crafting dynamic web components for immersive user interactions and seamless
+                                    payments.
+                                </li>
+                                <li class="service__modal-item">
+                                    Designing user interfaces that resonate with your brand identity, enhancing user
+                                    engagement.
+                                </li>
+                                <li class="service__modal-item">
+                                    Building platforms with intuitive navigation and integrated payment systems for
+                                    smooth transactions.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="services__card">
+                    <i class="ri-layout-2-line services__icon"></i>
+                    <h2 class="services__title">Interfaces UI/UX</h2>
+                    <p class="services_discription">
+                        Immersive Journeys: Exceptional UI/UX Design Elevating User Experiences with Intuitive
+                        Interfaces and Dynamic
+                        Engagement.
+                    </p>
+                    <button class="services__button button">Know More</button>
+                    <div class="services__modal">
+                        <div class="service__modal-content">
+                            <i class="ri-close-line service__modal-close"></i>
+                            <h2 class="service__modal-title">Interfaces UI/UX</h2>
+                            <ul class="services__modal-list grid">
+                                <li class="service__modal-item">
+                                    Crafting websites that seamlessly adjust to any screen size, ensuring a consistent
+                                    user experience.
+                                </li>
+                                <li class="service__modal-item">
+                                    Designing unique interfaces encapsulating your brand essence, fostering user
+                                    engagement.
+                                </li>
+                                <li class="service__modal-item">
+                                    Developing immersive web elements for dynamic interactions and seamless payments.
+                                </li>
+                                <li class="service__modal-item">
+                                    Creating platforms with integrated payment solutions and intuitive navigation for
+                                    enhanced usability.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!--==================== WORK ====================-->
+        <section class="work section ">
+            <h2 class="section__title">
+                Projects
+            </h2>
+
+            <h2 class="section__title cv_line">
+                Explore MERN Projects in My CV
+                <a href="assets/pdf/Raghaw_New_CV.pdf" download>
+
+                    <i class="ri-download-2-line download-icon"></i>
+                </a>
+            </h2>
+
+            <div class="work__container container grid">
+                <article class="work__card">
+                    <a href="Ecommerce.html" class="work__link">
+                        <img src="./assets/img/caraIMAGE.png" alt="image" class="work__img">
+                        <i class="ri-arrow-right-circle-line  work__icon"></i>
+                    </a>
+
+                    <h2 class="work__title">Ecommerce Websites</h2>
+                    <span class="work__subtitle">Website Designer</span>
+                </article>
+
+                <article class="work__card">
+                    <a href="./Pokedex.html" class="work__link">
+                        <img src="./assets/img/Pokedexs.png" alt="image" class="work__img">
+                        <i class="ri-arrow-right-circle-line  work__icon"></i>
+                    </a>
+
+                    <h2 class="work__title">Pokemon Websites</h2>
+                    <span class="work__subtitle">React Js / Hooks / Debouncing</span>
+                </article>
+
+                <article class="work__card">
+                    <a href="./Tic_Tac_Teo.html" class="work__link">
+                        <img src="./assets/img/Tic Tak.png" alt="image" class="work__img">
+                        <i class="ri-arrow-right-circle-line  work__icon"></i>
+                    </a>
+
+                    <h2 class="work__title">Tic Tac Teo Websites</h2>
+                    <span class="work__subtitle">React Js / React-Dom / UseState</span>
+                </article>
+            </div>
+        </section>
+
+        <!--==================== CONTACT ====================-->
+        <section class="contact section">
+            <div class="contact__container container grid">
+                <h2 class="section__title">
+                    Join Forces For Next Project
+                </h2>
+
+                <a href="contact.html" class="contact__button button">Contact Me</a>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <div class="footer__content grid">
+                <a href="index.html" class="footer__logo"><img src="./assets/img/bule logo ani.gif" alt=""></a>
+                <ul class="footer__links">
+                    <li>
+                        <a href="about.html" class="footer__link">About Me</a>
+                    </li>
+
+                    <li>
+                        <a href="projects.html" class="footer__link">Projects</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html" class="footer__link">Contact Me</a>
+                    </li>
+                </ul>
+
+                <div class="footer__social">
+                    <a href="https://www.instagram.com/?utm_source=pwa_homescreen&__pwa=1" target="_blank"
+                        class="footer__social--link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/chandra-dev-pathak-2684b7292/" target="_blank"
+                        class="footer__social--link">
+                        <i class="ri-linkedin-box-line"></i>
+                    </a>
+
+                    <a href="https://vercel.com/chandra-dev-pathak" target="_blank" class="footer__social--link">
+                        <i class="ri-triangle-fill"></i>
+                    </a>
+
+                    <a href="https://github.com/chandra-dev-Pathak" target="_blank" class="footer__social--link">
+                        <i class="ri-github-fill"></i>
+                    </a>
+                </div>
+            </div>
+            <span class="footer__copy">
+                &#169; All Rights Reserved By Chandra dev Pathak
+            </span>
+        </div>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-double-line"></i>
+    </a>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src=""></script>
+
+    <!--=============== INDEX JS ===============-->
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>

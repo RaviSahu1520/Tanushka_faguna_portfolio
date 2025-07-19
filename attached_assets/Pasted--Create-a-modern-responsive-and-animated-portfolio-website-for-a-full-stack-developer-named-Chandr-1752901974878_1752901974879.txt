@@ -1,0 +1,88 @@
+"Create a modern, responsive, and animated portfolio website for a full-stack developer named Chandra Dev Pathak. The website must be visually polished and clean with smooth scrolling, vibrant purple and white theme, and subtle shadow effects on cards and text.
+
+✅ Key Sections & Features:
+🔹 Header
+Navigation Menu: Home | About Me | Projects | Contact Me
+
+Right side toggle for light/dark mode
+
+‘Contact Me’ button with gradient background (primary CTA)
+
+🔹 Hero Section
+Left Side: Cartoon 3D-style character of a business professional waving hand
+
+Right Side:
+
+Name: Chandra Dev Pathak
+
+Subtitle: “Full Stack Developer”
+
+Social icons (LinkedIn, GitHub, etc.)
+
+"Download CV" button (primary action button)
+
+🔹 Services Section
+Title: "Services"
+
+Three service cards with icons and titles:
+
+Web Developer: Vision to Virtual Reality...
+
+Web Designer: Translating Ideas into Artistry...
+
+Interfaces UI/UX: Exceptional UI/UX Design...
+
+Each card has a "Know More" button
+
+🔹 Projects Section
+Title: "Projects"
+
+Subtitle: “Explore MERN Projects in My CV”
+
+Project Cards (3 items):
+
+Ecommerce Website: with image + role + tech
+
+Pokemon Website: ReactJs / Hooks / Debouncing
+
+Tic Tac Toe Website: ReactJs / UseState
+
+Clicking each opens a real or dummy project link
+
+🔹 CTA Section
+Centered message: "Join Forces For Next Project"
+
+"Contact Me" button again
+
+🔹 Footer
+Navigation Links: About Me | Projects | Contact Me
+
+Social Icons (Instagram, LinkedIn, GitHub, Resume Download Icon)
+
+Text: © All Rights Reserved By Chandra Dev Pathak
+
+Background color: Purple
+
+✅ Other Requirements:
+Use clean and readable Google Fonts (e.g., Poppins, Inter)
+
+Add subtle box shadows and hover animations
+
+Make sure everything is responsive for mobile and desktop
+
+Support for dark mode toggle
+
+Include smooth scroll to sections on menu click
+
+Use icon packs like Font Awesome or React Icons
+
+✅ Tech Stack Suggestion (optional):
+ReactJS or Next.js
+
+Tailwind CSS or styled-components
+
+Framer Motion or GSAP for animations
+
+Deployed via Vercel
+
+Create all this in aesthetic and polished UI like shown in attached screenshots."
