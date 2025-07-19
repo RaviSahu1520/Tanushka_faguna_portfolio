@@ -1,0 +1,30 @@
+import React from 'react';
+import { Rocket } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+
+export function CTASection() {
+  const scrollToContact = () => {
+    const element = document.getElementById('contact');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  return (
+    <section className="py-16 bg-white dark:bg-slate-800">
+      <div className="container mx-auto px-6 text-center">
+        <h2 className="text-4xl font-bold mb-8 text-gray-800 dark:text-gray-100">Join Forces For Next Project</h2>
+        <p className="text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto">
+          Ready to bring your ideas to life? Let's collaborate and create something amazing together.
+        </p>
+        <Button 
+          onClick={scrollToContact}
+          className="btn-primary text-white px-12 py-4 rounded-full font-semibold text-lg"
+        >
+          <Rocket className="mr-2" size={20} />
+          Contact Me
+        </Button>
+      </div>
+    </section>
+  );
+}
