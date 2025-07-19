@@ -22,16 +22,16 @@ export function HeroSection() {
   };
 
   return (
-    <section id="home" className="pt-24 pb-12 sm:pt-28 sm:pb-16 min-h-screen flex items-center relative">
+    <section id="home" className="pt-20 pb-12 sm:pt-24 sm:pb-16 min-h-screen flex items-center">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Hello message bubble - positioned on center-left */}
-        <div className="absolute top-4 left-1/2 transform -translate-x-1/2 lg:left-1/4 lg:transform-none bg-white dark:bg-slate-800 px-4 py-2 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700 animate-bounce z-50">
-          <p className="text-sm font-medium text-gray-700 dark:text-gray-300">Hello! 👋</p>
-        </div>
-        
         <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
           {/* Left Side - Character */}
           <div className="order-1 lg:order-1 relative flex justify-center lg:justify-start">
+            {/* Hello message bubble - positioned in left corner of banner, near image */}
+            <div className="absolute -top-8 -left-4 sm:-left-8 bg-white dark:bg-slate-800 px-4 py-2 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700 animate-bounce z-10">
+              <p className="text-sm font-medium text-gray-700 dark:text-gray-300">Hello! 👋</p>
+            </div>
+            
             <div className="relative">
               <div className="absolute inset-0 gradient-bg rounded-full blur-3xl opacity-20 animate-pulse"></div>
               <img 
