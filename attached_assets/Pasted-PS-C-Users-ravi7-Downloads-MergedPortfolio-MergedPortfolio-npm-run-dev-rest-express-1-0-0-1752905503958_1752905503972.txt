@@ -1,0 +1,71 @@
+PS C:\Users\ravi7\Downloads\MergedPortfolio\MergedPortfolio> npm run dev
+>>
+
+> rest-express@1.0.0 dev
+> cross-env NODE_ENV=development tsx server/index.ts
+
+'cross-env' is not recognized as an internal or external command,
+operable program or batch file.
+PS C:\Users\ravi7\Downloads\MergedPortfolio\MergedPortfolio> NODE_ENV=development tsx server/index.ts
+>>
+NODE_ENV=development : The term 'NODE_ENV=development' is not recognized as the name of a 
+cmdlet, function, script file, or operable program. Check the spelling of the name, or if  
+a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ NODE_ENV=development tsx server/index.ts
++ ~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (NODE_ENV=development:String) [], CommandNo  
+   tFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\ravi7\Downloads\MergedPortfolio\MergedPortfolio> set NODE_ENV=development && tsx server/index.ts
+>>
+At line:1 char:26
++ set NODE_ENV=development && tsx server/index.ts
++                          ~~
+The token '&&' is not a valid statement separator in this version.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException      
+    + FullyQualifiedErrorId : InvalidEndOfLine
+
+PS C:\Users\ravi7\Downloads\MergedPortfolio\MergedPortfolio> $env:NODE_ENV="development"; tsx server/index.ts
+>>
+tsx : The term 'tsx' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that   
+the path is correct and try again.
+At line:1 char:30
++ $env:NODE_ENV="development"; tsx server/index.ts
++                              ~~~
+    + CategoryInfo          : ObjectNotFound: (tsx:String) [], CommandNotFoundException    
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\ravi7\Downloads\MergedPortfolio\MergedPortfolio> npm install
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: @tailwindcss/vite@4.1.3
+npm error Found: vite@7.0.5
+npm error node_modules/vite
+npm error   dev vite@"^7.0.5" from the root project
+npm error   peer vite@"^4.2.0 || ^5.0.0 || ^6.0.0 || ^7.0.0" from @vitejs/plugin-react@4.7.0
+npm error   node_modules/@vitejs/plugin-react
+npm error     dev @vitejs/plugin-react@"^4.3.2" from the root project
+npm error
+npm error Could not resolve dependency:
+npm error peer vite@"^5.2.0 || ^6" from @tailwindcss/vite@4.1.3
+npm error node_modules/@tailwindcss/vite
+npm error   dev @tailwindcss/vite@"^4.1.3" from the root project
+npm error
+npm error Conflicting peer dependency: vite@6.3.5
+npm error node_modules/vite
+npm error   peer vite@"^5.2.0 || ^6" from @tailwindcss/vite@4.1.3
+npm error   node_modules/@tailwindcss/vite
+npm error     dev @tailwindcss/vite@"^4.1.3" from the root project
+npm error
+npm error Fix the upstream dependency conflict, or retry
+npm error this command with --force or --legacy-peer-deps
+npm error to accept an incorrect (and potentially broken) dependency resolution.
+npm error
+npm error
+npm error For a full report see:
+npm error C:\Users\ravi7\AppData\Local\npm-cache\_logs\2025-07-19T06_11_09_187Z-eresolve-report.txt
+npm error A complete log of this run can be found in: C:\Users\ravi7\AppData\Local\npm-cache\_logs\2025-07-19T06_11_09_187Z-debug-0.log
