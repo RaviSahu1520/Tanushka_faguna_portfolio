@@ -26,7 +26,12 @@ export function HeroSection() {
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Side - Character */}
-          <div className="order-1 lg:order-1 flex justify-center">
+          <div className="order-1 lg:order-1 flex flex-col items-center">
+            {/* Hello message bubble */}
+            <div className="mb-4 bg-white dark:bg-slate-800 px-4 py-2 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700 animate-bounce">
+              <p className="text-sm font-medium text-gray-700 dark:text-gray-300">Hello! 👋</p>
+            </div>
+            
             <div className="relative">
               <div className="absolute inset-0 gradient-bg rounded-full blur-3xl opacity-20 animate-pulse"></div>
               <img 
@@ -34,11 +39,6 @@ export function HeroSection() {
                 alt="3D Professional Character" 
                 className="relative hero-character rounded-2xl w-80 h-96 object-cover animate-float" 
               />
-              
-              {/* Hello message bubble */}
-              <div className="absolute -top-4 -left-4 bg-white dark:bg-slate-800 px-4 py-2 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700 animate-bounce">
-                <p className="text-sm font-medium text-gray-700 dark:text-gray-300">Hello! 👋</p>
-              </div>
             </div>
           </div>
           
@@ -48,7 +48,7 @@ export function HeroSection() {
               <h1 className="text-4xl lg:text-6xl font-bold mb-4 animate-slide-up">
                 <span className="gradient-text">Chandra Dev Pathak</span>
               </h1>
-              <p className="text-xl lg:text-2xl text-gray-600 dark:text-gray-400 font-medium animate-slide-up animation-delay-200 animate-blink">
+              <p className="text-xl lg:text-2xl text-gray-600 dark:text-gray-400 font-medium animate-slide-up animation-delay-200 animate-typing">
                 Frontend Developer and Graphics Designer
               </p>
             </div>
