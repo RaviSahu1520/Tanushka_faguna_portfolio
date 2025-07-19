@@ -28,7 +28,7 @@ export function HeroSection() {
           {/* Left Side - Character */}
           <div className="order-1 lg:order-1 relative flex justify-center lg:justify-start">
             {/* Hello message bubble - positioned in left corner of banner, near image */}
-            <div className="absolute -top-8 -left-4 sm:-left-8 bg-white dark:bg-slate-800 px-4 py-2 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700 animate-bounce z-10">
+            <div className="absolute top-4 -left-4 sm:-left-8 bg-white dark:bg-slate-800 px-4 py-2 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700 animate-bounce z-10">
               <p className="text-sm font-medium text-gray-700 dark:text-gray-300">Hello! 👋</p>
             </div>
             
