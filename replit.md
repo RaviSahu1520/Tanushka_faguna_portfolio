@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a modern, responsive portfolio website for Chandra Dev Pathak, a full-stack MERN developer. The application showcases a clean, animated design with smooth scrolling and a vibrant purple gradient theme. Built as a full-stack TypeScript application with React frontend and Express backend, it features a professional portfolio layout with hero section, services showcase, project gallery, and contact functionality.
+This is a modern, responsive portfolio website for Tanushka Faguna, a frontend developer and UI/UX designer. The application showcases a clean, animated design with smooth scrolling and a vibrant purple gradient theme. Built as a full-stack TypeScript application with React frontend and Express backend, it features a professional portfolio layout with hero section, services showcase, project gallery, and contact functionality.
 
 ## User Preferences
 

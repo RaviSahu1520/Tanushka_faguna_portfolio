@@ -24,7 +24,7 @@ export function Header() {
             <div className="w-10 h-10 gradient-bg rounded-lg flex items-center justify-center">
               <Code className="text-white text-lg" size={20} />
             </div>
-            <span className="text-xl font-semibold gradient-text">Chandra</span>
+            <span className="text-xl font-semibold gradient-text">Tanushka</span>
           </div>
           
           {/* Desktop Navigation */}

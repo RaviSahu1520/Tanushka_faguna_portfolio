@@ -4,6 +4,7 @@ import { storage } from "./storage";
 import { insertContactMessageSchema } from "@shared/schema";
 import { z } from "zod";
 import path from "path";
+import fs from "fs";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // Contact form submission
@@ -31,45 +32,56 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
-  // CV download endpoint
+  // CV download endpoint - ENHANCED VERSION with all important features
   app.get("/api/download-cv", (req, res) => {
-    // In a real application, this would serve an actual CV file
-    // For now, we'll simulate a CV download
-    const cvContent = `
-Chandra Dev Pathak
-Full Stack / MERN Developer
+    try {
+      // IMPORTANT: Path to your actual PDF resume file
+      const cvPath = path.join(process.cwd(), 'attached_assets', 'Tanushka_Faguna_Resume.pdf');
 
-Contact Information:
-Email: chandra.dev.pathak@example.com
-LinkedIn: https://linkedin.com/in/chandra-dev-pathak
-GitHub: https://github.com/chandra-dev-pathak
+      console.log('Attempting to serve file from:', cvPath); // IMPORTANT: Debug logging
 
-Skills:
-- React.js, Node.js, Express.js, MongoDB
-- TypeScript, JavaScript, HTML5, CSS3
-- TailwindCSS, Material-UI, Bootstrap
-- Git, GitHub, Vercel, Netlify
+      // IMPORTANT: Check if file exists before serving
+      if (!fs.existsSync(cvPath)) {
+        console.error('CV file not found at:', cvPath);
+        return res.status(404).json({ error: 'CV file not found' });
+      }
 
-Experience:
-Full Stack Developer
-- Developed responsive web applications using MERN stack
-- Implemented modern UI/UX designs with React and TailwindCSS
-- Built RESTful APIs and integrated with MongoDB databases
-- Deployed applications on cloud platforms
+      // IMPORTANT: Get file stats for proper headers
+      const stat = fs.statSync(cvPath);
+      console.log('File size:', stat.size, 'bytes'); // IMPORTANT: Debug info
 
-Projects:
-1. Ecommerce Website - Full-stack platform with React, Node.js, Express, MongoDB
-2. Pokemon Website - Interactive search app with React hooks and API integration
-3. Tic Tac Toe Game - Classic game built with React state management
+      // IMPORTANT: Set proper headers for PDF download
+      res.setHeader('Content-Type', 'application/pdf'); // CRITICAL for PDF files
+      res.setHeader('Content-Disposition', 'attachment; filename="Tanushka_Faguna_Resume.pdf"');
+      res.setHeader('Content-Length', stat.size); // IMPORTANT for download progress
+      res.setHeader('Accept-Ranges', 'bytes'); // IMPORTANT for better download handling
+      res.setHeader('Cache-Control', 'no-cache'); // IMPORTANT to prevent caching issues
 
-Education:
-Bachelor's Degree in Computer Science
-Relevant coursework in web development, database management, and software engineering
-    `;
+      // IMPORTANT: Create read stream and handle errors
+      const fileStream = fs.createReadStream(cvPath);
 
-    res.setHeader('Content-Type', 'text/plain');
-    res.setHeader('Content-Disposition', 'attachment; filename="Chandra_Dev_Pathak_CV.txt"');
-    res.send(cvContent);
+      // IMPORTANT: Handle stream errors
+      fileStream.on('error', (streamError) => {
+        console.error('Error reading file stream:', streamError);
+        if (!res.headersSent) {
+          res.status(500).json({ error: 'Error reading file' });
+        }
+      });
+
+      // IMPORTANT: Handle successful streaming
+      fileStream.on('open', () => {
+        console.log('File stream opened successfully');
+      });
+
+      // IMPORTANT: Pipe file to response
+      fileStream.pipe(res);
+
+    } catch (error) {
+      console.error('Error serving CV:', error);
+      if (!res.headersSent) {
+        res.status(500).json({ error: 'Failed to download CV' });
+      }
+    }
   });
 
   const httpServer = createServer(app);

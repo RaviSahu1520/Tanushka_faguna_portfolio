@@ -17,7 +17,7 @@ export function Footer() {
       const url = window.URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
-      a.download = 'Chandra_Dev_Pathak_CV.txt';
+      a.download = 'Tanushka_Faguna_Resume.pdf';
       document.body.appendChild(a);
       a.click();
       window.URL.revokeObjectURL(url);
@@ -37,79 +37,71 @@ export function Footer() {
               <div className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center">
                 <Code className="text-white text-lg" size={20} />
               </div>
-              <span className="text-2xl font-semibold">Chandra Dev Pathak</span>
+              <span className="text-2xl font-semibold">Tanushka Faguna</span>
             </div>
-            <p className="text-white/80">Full Stack MERN Developer crafting exceptional digital experiences.</p>
+            <p className="text-white/80">Frontend Developer, Graphics Designer, ui/ux designer, and Content writer  </p>
           </div>
-          
+
           {/* Quick Links */}
           <div>
             <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
             <div className="space-y-2">
-              <button 
+              <button
                 onClick={() => scrollToSection('about')}
                 className="block text-white/80 hover:text-white transition-colors text-left"
               >
                 About Me
               </button>
-              <button 
+              <button
                 onClick={() => scrollToSection('projects')}
                 className="block text-white/80 hover:text-white transition-colors text-left"
               >
                 Projects
               </button>
-              <button 
-                onClick={() => scrollToSection('contact')}
+              <a
+                href="mailto:tanugofficial2121@gmail.com"
                 className="block text-white/80 hover:text-white transition-colors text-left"
               >
                 Contact Me
-              </button>
+              </a>
+
             </div>
           </div>
-          
+
           {/* Contact Info */}
           <div>
             <h3 className="text-xl font-semibold mb-4">Get In Touch</h3>
-            <p className="text-white/80 mb-4">chandra.dev.pathak@example.com</p>
+            <p className="text-white/80 mb-4">tanugofficial2121@gmail.com</p>
             <div className="flex space-x-4">
-              <a 
+              {/* <a 
                 href="https://instagram.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors"
               >
                 <Instagram size={20} />
-              </a>
-              <a 
-                href="https://linkedin.com/in/chandra-dev-pathak" 
-                target="_blank" 
+              </a> */}
+              <a
+                href="https://www.linkedin.com/in/tanushka-faguna-485045346"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors"
               >
                 <Linkedin size={20} />
               </a>
-              <a 
-                href="https://github.com/chandra-dev-pathak" 
-                target="_blank" 
+              <a
+                href="https://github.com/webdeveloper555"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors"
               >
                 <Github size={20} />
               </a>
-              <button 
-                onClick={downloadCV}
-                className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors"
-              >
-                <Download size={20} />
-              </button>
+
             </div>
           </div>
         </div>
-        
-        {/* Copyright */}
-        <div className="border-t border-white/20 pt-8 text-center">
-          <p className="text-white/80">&copy; 2024 All Rights Reserved By Chandra Dev Pathak</p>
-        </div>
+
       </div>
     </footer>
   );
