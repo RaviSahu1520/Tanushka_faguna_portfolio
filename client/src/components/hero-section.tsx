@@ -34,8 +34,8 @@ export function HeroSection() {
             <div className="relative">
               <div className="absolute inset-0 rounded-full blur-3xl opacity-20 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 animate-pulse"></div>
               <div className="relative w-64 h-80 sm:w-72 sm:h-88 md:w-80 md:h-96 rounded-2xl overflow-hidden shadow-2xl border-4 border-white dark:border-gray-700 animate-float">
-                <img 
-                  src="/attached_assets/WhatsApp Image 2025-09-09 at 18.12.51_785cca74.jpg" 
+                <img
+                  src="/attached_assets/tanushka-profile.jpg"
                   alt="Tanushka Faguna - Frontend Developer"
                   className="w-full h-full object-cover object-center"
                 />
